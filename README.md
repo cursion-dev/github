@@ -17,7 +17,7 @@ This action lets you run a Test, Case, or Flow for a specific Site from your [Cu
 ## Example usage
 
 ``` yml
-uses: actions/cursion@v0.0.1
+uses: actions/cursion-runner@v0.0.5
 with:
   api-token: ${{ secrets.CURSION_API_TOKEN }}
   run-type: 'flow'
