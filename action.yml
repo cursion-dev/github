@@ -1,0 +1,38 @@
+# action.yml
+name: 'cursion'
+description: 'Run a Test, Case, or Flow from your Cursion account'
+inputs:
+  api-token:  # API token
+    description: 'API token from your Cursion account'
+    required: true
+    default: ''
+  run-type:  # type of run to execute
+    description: 'test, case, or flow'
+    required: true
+    default: 'test'
+  site-id:  # id of site
+    description: 'ID of the `Site` you want to run againt'
+    required: true
+    default: ''
+  case-id:  # id of case to run
+    description: 'ID of the `Case` you want to run'
+    required: false
+    default: ''
+  flow-id:  # id of flow to run
+    description: 'ID of the `Flow` you want to run'
+    required: false
+    default: ''
+  updates:  # update values for case run
+    description: 'step-1:<value> step-2:<value>'
+    required: false
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.api-token }}
+    - ${{ inputs.run-type }}
+    - ${{ inputs.site-id }}
+    - ${{ inputs.case-id }}
+    - ${{ inputs.flow-id }}
+    - ${{ inputs.updates }}
