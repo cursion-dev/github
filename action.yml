@@ -1,6 +1,9 @@
 # action.yml
 name: 'cursion-runner'
 description: 'Run a Test, Case, or Flow from your Cursion account'
+branding:
+  icon: 'chevron-right'
+  color: 'blue'
 inputs:
   api-token:  # API token
     description: 'API token from your Cursion account'
