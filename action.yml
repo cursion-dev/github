@@ -1,5 +1,5 @@
 # action.yml
-name: 'cursion'
+name: 'cursion-runner'
 description: 'Run a Test, Case, or Flow from your Cursion account'
 inputs:
   api-token:  # API token

@@ -1,4 +1,4 @@
-# Cursion Action
+# Cursion-Runner Action
 
 This action lets you run a Test, Case, or Flow for a specific Site from your [Cursion account](https://cursion.dev/account).
 
