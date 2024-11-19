@@ -1,13 +1,13 @@
 # Cursion-Runner Action
 
-This action lets you run a Test, Case, or Flow for a specific Site from your [Cursion account](https://cursion.dev/account).
+This action lets you run a Test, Case, or Flow for a specific Site from your [Cursion account](https://app.cursion.dev/account).
 
 
 ## Inputs
 
 | key | description | required | default | 
 | --- | --- | --- | --- |
-| `api-token` | Your API Token found in your [Cursion account](https://cursion.dev/account) | **YES** | `None` |
+| `api-token` | Your API Token found in your [Cursion account](https://app.cursion.dev/account) | **YES** | `None` |
 | `run-type` | The type of run: `test`, `case`, or `flow` | **YES** | `test` |
 | `site-id` | `ID` of the `Site` you want to run against | **YES** | `None` |
 | `case-id` | `ID` of the `Case` you want to run | **NO** | `None` |
